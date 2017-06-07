@@ -1,4 +1,4 @@
-# WBTableView  [简书](http://www.jianshu.com/p/188afe28400b)
+# WBTableView  [简书](http://www.jianshu.com/p/206f2122e6b3)
 自定义万能用UITableView
 
 ![效果](https://github.com/webber-wan/WBTableView/blob/master/WBTableView/WBTableVIew.gif)
