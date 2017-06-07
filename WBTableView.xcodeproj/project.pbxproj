@@ -21,6 +21,7 @@
 		381663E11EE7ED040036744E /* WBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381663D81EE7ED040036744E /* WBBaseViewController.m */; };
 		381663E21EE7ED040036744E /* WBNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 381663DA1EE7ED040036744E /* WBNextViewController.m */; };
 		381663E31EE7ED040036744E /* WBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 381663DD1EE7ED040036744E /* WBTableView.m */; };
+		381663E51EE7FE660036744E /* WBTableVIew.gif in Resources */ = {isa = PBXBuildFile; fileRef = 381663E41EE7FE660036744E /* WBTableVIew.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		381663DA1EE7ED040036744E /* WBNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNextViewController.m; sourceTree = "<group>"; };
 		381663DC1EE7ED040036744E /* WBTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTableView.h; sourceTree = "<group>"; };
 		381663DD1EE7ED040036744E /* WBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTableView.m; sourceTree = "<group>"; };
+		381663E41EE7FE660036744E /* WBTableVIew.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WBTableVIew.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				3816638C1EE7EBAB0036744E /* Assets.xcassets */,
 				3816638E1EE7EBAB0036744E /* LaunchScreen.storyboard */,
 				381663911EE7EBAB0036744E /* Info.plist */,
+				381663E41EE7FE660036744E /* WBTableVIew.gif */,
 				381663801EE7EBAB0036744E /* Supporting Files */,
 			);
 			path = WBTableView;
@@ -301,6 +304,7 @@
 				381663E01EE7ED040036744E /* WBTableViewCell.xib in Resources */,
 				381663901EE7EBAB0036744E /* LaunchScreen.storyboard in Resources */,
 				3816638D1EE7EBAB0036744E /* Assets.xcassets in Resources */,
+				381663E51EE7FE660036744E /* WBTableVIew.gif in Resources */,
 				3816638B1EE7EBAB0036744E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +571,7 @@
 				381663AC1EE7EBAC0036744E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381663AD1EE7EBAC0036744E /* Build configuration list for PBXNativeTarget "WBTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +580,7 @@
 				381663AF1EE7EBAC0036744E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		381663B01EE7EBAC0036744E /* Build configuration list for PBXNativeTarget "WBTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +589,7 @@
 				381663B21EE7EBAC0036744E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
