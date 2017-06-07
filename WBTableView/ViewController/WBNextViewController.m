@@ -37,6 +37,14 @@
     [_backBtn addTarget:self action:@selector(backBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_backBtn];
     
+}
+
+
+/**
+ 初始化tableView
+ */
+- (void)setupTableView {
+    
     //创建数据源数据
     NSMutableArray *muArray = [[NSMutableArray alloc] init];
     for(int i = 0 ; i < 10; i++) {
@@ -49,7 +57,7 @@
         WB1TableViewCell *cell = (WB1TableViewCell *)wbCell;
         cell.data = wbData;
     }];
-
+    
     //注册自定义tableViewCell
     [_wbTableView registerTableViewCellByClassName:@"WB1TableViewCell" registerMode:WBRegisterModeClass identifier:@"identifier"];
     
@@ -58,7 +66,6 @@
         NSLog(@"data = %@",wbData);
     }];
 }
-
 
 - (void)backBtnClick:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
