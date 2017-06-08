@@ -37,6 +37,7 @@
     [_backBtn addTarget:self action:@selector(backBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_backBtn];
     
+    [self setupTableView];
 }
 
 
@@ -65,6 +66,13 @@
     [_wbTableView selectTableViewCell:^(id wbCell, id wbData) {
         NSLog(@"data = %@",wbData);
     }];
+    
+    //新增：
+    //设置section个数
+    _wbTableView.sectionNumber = 3;
+    
+    //设置cell行高
+    _wbTableView.cellHeight = 88;
 }
 
 - (void)backBtnClick:(id)sender {

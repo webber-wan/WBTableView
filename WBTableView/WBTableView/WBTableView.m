@@ -10,7 +10,6 @@
 
 @interface WBTableView ()
 
-
 @property (nonatomic, copy)NSString *identifier;
 
 @property (nonatomic, copy)NSArray *dataSourceArray;
@@ -33,6 +32,8 @@
         self.dataSourceArray = dataSourceArray;
         self.dataSourceBlock = [dataSourceBlock copy];
         self.delegate = delegate;
+        self.sectionNumber = 1;
+        self.cellHeight = 44.;
         [self initTableViewWithFrame:frame style:style];
     }
     
@@ -71,6 +72,15 @@
     }
 }
 
+#pragma mark -- 属性set/get方法
+- (void)setSectionNumber:(NSInteger)sectionNumber {
+    _sectionNumber = sectionNumber;
+}
+
+- (void)setCellHeight:(CGFloat)cellHeight {
+    _cellHeight = cellHeight;
+}
+
 #pragma mark - UITableView
 #pragma mark -- UITableViewDataSource
 - (void)registerTableViewCellByClassName:(NSString *)className registerMode:(WBRegisterMode)registerMode identifier:(NSString *)identifier {
@@ -98,7 +108,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return _sectionNumber;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -118,7 +128,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 64;
+    return _cellHeight;
 }
 
 

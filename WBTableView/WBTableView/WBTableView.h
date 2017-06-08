@@ -44,7 +44,14 @@ typedef void(^WBTableViewCellSelectBlock)(id wbCell, id wbData);
 
 @interface WBTableView : NSObject<UITableViewDelegate,UITableViewDataSource>
 
+/** 系统的UITableView **/
 @property (nonatomic, strong) UITableView *wbTableView;
+
+/** section个数，默认不写是1 **/
+@property (nonatomic, assign) NSInteger sectionNumber;
+
+/** cell行高，默认不写是44. **/
+@property (nonatomic, assign) CGFloat cellHeight;
 
 
 /**
