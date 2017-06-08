@@ -3,12 +3,17 @@
 
 ![效果](https://github.com/webber-wan/WBTableView/blob/master/WBTableView/WBTableVIew.gif)
 
-## 使用说明
+## 使用说明:
 1. 把WBTableView文件夹拖到项目中;
 2. 导入头文件```#import "WBTableView.h"```;
 3. 使用```- (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style dataSourceArray:(NSArray *)dataSourceArray delegate:(id)delegate dataSourceBlock:(WBDataSourceBlock)dataSourceBlock``` 方法初始化WBTableView;
 4. 使用```- (void)registerTableViewCellByClassName:(NSString *)className registerMode:(WBRegisterMode)registerMode identifier:(NSString *)identifier```注册自定义UITableViewCell;
 5. (可选)选中某行cell需要调用```- (void)selectTableViewCell:(WBTableViewCellSelectBlock)tableViewCellSelectBlock```方法；
+
+## 更新:
+
+1. 新增tableView的组数个数自定义；
+2. 新增cell行高自定义；
 
 ## 例：
 ```
@@ -37,5 +42,12 @@
     [_wbTableView selectTableViewCell:^(id wbCell, id wbData) {
         NSLog(@"data = %@",wbData);
     }];
+    
+      //新增：
+    //设置section个数
+    _wbTableView.sectionNumber = 3;
+    
+    //设置cell行高
+    _wbTableView.cellHeight = 88;
 }
 ```
